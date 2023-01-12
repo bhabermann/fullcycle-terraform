@@ -4,6 +4,6 @@ resource "local_file" "local" {
 }
 
 variable "conteudo" {
-  type = "string"
+  type = string
   default = "Hello World"
 }
