@@ -1,6 +1,9 @@
 resource "local_file" "local" {
-  filename = "exemplo.txt"
+  filename = "exemplo.tfstate"
   content = var.conteudo
 }
 
-variable "conteudo" {}
+variable "conteudo" {
+  type = "string"
+  default = "Hello World"
+}
