@@ -15,3 +15,7 @@ output "file-id" {
 output "content" {
   value = var.conteudo
 }
+
+output "chicken-egg" {
+  value = sort(["🥚", "🐔"])
+}
