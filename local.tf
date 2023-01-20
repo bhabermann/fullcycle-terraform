@@ -3,6 +3,14 @@ resource "local_file" "local" {
   content = var.conteudo
 }
 
+data "local_file" "conteudo-exemplo" {
+  filename = "exemplo.tfstate"
+}
+
+output "data-source-result" {
+  value = data.local_file.conteudo-exemplo.content_base64
+}
+
 variable "conteudo" {
   type = string
   default = "Hello World"
