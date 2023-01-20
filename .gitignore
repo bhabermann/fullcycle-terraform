@@ -40,6 +40,6 @@ override.tf.json
 terraform.rc
 
 # Infracost
-.Infracost/
+.infracost/
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
